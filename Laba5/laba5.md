@@ -1,5 +1,5 @@
 Proxy (Прокси)
-'''python
+```python
 
 from abc import ABC, abstractmethod
 
@@ -33,10 +33,10 @@ admin_db = DatabaseProxy(has_access=True)
 user_db.query("SELECT * FROM users")  # Вывод: Access denied. Query cannot be executed.
 admin_db.query("SELECT * FROM users")  # Вывод: Executing query: SELECT * FROM users
 
-'''
+```
 
 Adapter (Адаптер)
-'''python
+```python
 from abc import ABC, abstractmethod
 
 # Adaptee
@@ -64,12 +64,12 @@ logger = LoggerAdapter(external_logger)
 
 logger.log("This is a test message.")  # Вывод: External log: This is a test message.
 
-'''
+```
 
 
 Bridge (мост) *
 
-'''python
+```python
 from abc import ABC, abstractmethod
 
 # Implementor
@@ -117,4 +117,4 @@ text_on_printer.render("Hello, world!")  # Вывод: Printing to paper: Text: 
 
 image_on_monitor = ImageOutput(monitor)
 image_on_monitor.render("101010101")  # Вывод: Displaying on monitor: Image: [Binary data: 101010101]
-'''
+```

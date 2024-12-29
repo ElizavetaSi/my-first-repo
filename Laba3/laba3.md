@@ -1,7 +1,7 @@
 
 Singleton (Одиночка)
 
-'''python
+```python
 
 class Singleton:
     _instance = None
@@ -13,10 +13,10 @@ class Singleton:
 
     def some_method(self):
         print("Метод экземпляра Singleton")
-'''
+```
 
 Factory Method (Фабричный метод)
-'''python
+```python
 from abc import ABC, abstractmethod
 
 
@@ -52,10 +52,10 @@ class ConsoleLoggerFactory(LoggerFactory):
         return ConsoleLogger()
 
 
-'''
+```
 Abstract Factory (Абстрактная фабрика)
 
-'''python
+```python
 
 from abc import ABC, abstractmethod
 
@@ -116,10 +116,10 @@ class MacFactory(GUIFactory):
     def create_checkbox(self) -> Checkbox:
         return MacCheckbox()
 
-'''
+```
  
 Builder (Строитель)
-'''python
+```python
 
 class Pizza:
     def __init__(self):
@@ -163,5 +163,5 @@ class PizzaDirector:
         self.builder.build_topping("pepperoni and jalapenos")
 
 
-'''
+```
 

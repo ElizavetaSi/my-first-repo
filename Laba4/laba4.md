@@ -1,4 +1,4 @@
-'''python
+```python
 from abc import ABC, abstractmethod
 
 # Интерфейс стратегии
@@ -66,10 +66,10 @@ if __name__ == "__main__":
     sorter.set_strategy(QuickSortStrategy())
     sorter.sort_array(array2)
     print(array2)
-'''
+```
 
 Цепочка обязаностей 
-'''ypthon 
+```ypthon 
 from abc import ABC, abstractmethod
 
 # Интерфейс обработчика
@@ -111,9 +111,9 @@ if __name__ == "__main__":
     handler_a.handle_request("TYPE_A")  # Вывод: ConcreteHandlerA handled the request.
     handler_a.handle_request("TYPE_B")  # Вывод: ConcreteHandlerB handled the request.
     handler_a.handle_request("TYPE_C")  # Ничего не выводится, так как обработчик отсутствует
-'''
+```
 Итератор
-'''python
+```python
 class ArrayIterator:
     def __init__(self, items):
         self.items = items
@@ -137,4 +137,4 @@ if __name__ == "__main__":
 
     while iterator.has_next():
         print(iterator.next())
-'''
+```
